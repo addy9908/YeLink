@@ -1,9 +1,10 @@
-<h1 align="center">SOP for ZY_PinBridge</h1>
+<h1 align="center">SOP for YeLink</h1>
 <p align="center">
   EthoVision-controlled Arduino I/O for a single behavioral chamber
 </p>
 
 > [!NOTE]
+> **Update 2026-10-30:** Change software name to `YeLink`.
 > **Update 2026-09-25:** Change software name from `ZY_EthovisionIO` to `ZY_PinBridge`.
 
 <p align="center">
