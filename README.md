@@ -8,7 +8,7 @@
 > **Update 2026-09-25:** Change software name from `ZY_EthovisionIO` to `ZY_PinBridge`.
 
 <p align="center">
-  <img src="images/Screenshot20260924.png" width="600"><br>
+  <img src="images/YeLink_AdapterUI.png" width="600"><br>
   <em>ZY_PinBridge_UI</em>
 </p>
 
