@@ -4,19 +4,19 @@
 </p>
 
 > [!NOTE]
-> **Update 2026-10-30:** Change software name to `YeLink`.
-> **Update 2026-09-25:** Change software name from `ZY_EthovisionIO` to `ZY_PinBridge`.
+> <p>**Update 2026-10-30:** Change version 3 software name to `YeLink`. </p>
+> <p>**Update 2026-09-25:** Change version 2 software name from `ZY_EthovisionIO` to `ZY_PinBridge`.</p>
 
 <p align="center">
   <img src="images/YeLink_AdapterUI.png" width="600"><br>
-  <em>ZY_PinBridge_UI</em>
+  <em>YeLink_AdapterUI</em>
 </p>
 
 ## One-Time Setup
 
 ### 1. Flash the Arduino Firmware
 
-* Open `ZY_EthovisionIO.ino` in the **Arduino IDE**.
+* Open `YeLink.ino` in the **Arduino IDE**.
 * Flash the firmware to an **Arduino Uno R3**.
 
 ### 2. Optional: Test the Arduino
@@ -29,19 +29,7 @@ p=13,v=1,d=5
 ```
 
 * Confirm that the command works correctly. The built-in **Pin 13 LED** on the Arduino Uno R3 should turn on for 5 seconds.
-* **Close the Serial Monitor after testing** so the COM port is available to `ZY_AdapterUI.exe`.
-
-### 3. Optional: Rebuild the Executable Files
-
-> This step is only required if you want to modify the `.cs` source code and re-compile it.
-
-* Run:
-
-```text
-build_UI.bat
-```
-
-* This will recompile the `.exe` files.
+* **Close the Serial Monitor after testing** so the COM port is available to `YeLink_AdapterUI.exe`.
 
 ---
 
@@ -54,18 +42,9 @@ build_UI.bat
 
 ### 2. Start ZY_PinBridge_UI
 
-* Launch `ZY_PinBridge_UI.exe`.
+* Launch `YeLink_AdapterUI.exe`.
 * Select the correct COM port and connect.
-* Leave `ZY_PinBridge_UI` running throughout the experiment.
-* ~~Wait approximately **10 seconds** before starting EthoVision~~ 
-
-~~You can verify that the connection is ready by testing:~~
-
-~~```text~~
-~~p=13,v=1,d=5~~
-~~```~~
-
-~~The built-in Pin 13 LED should turn on for 5 seconds.~~
+* Leave `YeLink_AdapterUI` running throughout the experiment.
 
 > [!NOTE]
 > **Update 2026-09-25:** You no longer need to wait after `Connected` is displayed.
@@ -78,14 +57,14 @@ In EthoVision:
 2. Set **Select program to run** to:
 
 ```text
-ZY_PinBridge_Controller.exe
+YeLink_Controller.exe
 ```
 
 3. Enter the desired command under **Command line options**.
 
 #### Examples
 <p align="center">
-  <img src="images/Ethovision_Trial_Control.png" width="600"><br>
+  <img src="images/YeLink_Ethovision_Trial_Control.png" width="600"><br>
   <em>EthoVision Trial Control setup</em>
 </p>
 Turn Pin 8 ON:
@@ -119,15 +98,15 @@ where:
 ### 4. Run the Experiment
 
 * Start the experiment in **EthoVision**.
-* Keep `ZY_PinBridge_UI` running throughout the session.
-* Monitor the **exportable log in ZY_PinBridge_UI** to confirm that commands are being received and executed correctly.
+* Keep `YeLink_AdapterUI` running throughout the session.
+* Monitor the **exportable log in YeLink_AdapterUI** to confirm that commands are being received and executed correctly.
 
 ---
 
 ## Shutdown
 
 1. Finish or stop the EthoVision experiment.
-2. Close `ZY_PinBridge_UI`.
+2. Close `YeLink_AdapterUI`.
 3. Disconnect the Arduino if needed.
 
 
